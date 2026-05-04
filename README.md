@@ -1,267 +1,372 @@
 <div align="center">
 
-<!-- HERO BANNER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0f3460,100:533483&height=200&section=header&text=PUNYANSH%20SHARMA&fontSize=52&fontColor=e0e0ff&animation=fadeIn&fontAlignY=38&desc=Backend%20%E2%80%A2%20Systems%20%E2%80%A2%20AI%20Engineer&descAlignY=58&descSize=18&descColor=7b8cde"/>
-
-<!-- TYPING ANIMATION -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=800&color=7B8CDE&center=true&vCenter=true&width=600&lines=Architect+of+AI+systems+%F0%9F%A4%96;Pipeline+engineer%2C+not+a+prompt+monkey;Backend+first.+Always.;Building+machines+that+think+and+act." alt="Typing SVG" />
-</a>
-
-<br/>
-
-<!-- IDENTITY PILLS -->
-<img src="https://img.shields.io/badge/-%F0%9F%93%8D%20Chandigarh%2C%20India-0d1117?style=flat-square&labelColor=0d1117&color=0d1117"/>
-<img src="https://img.shields.io/badge/-AI%20Systems-533483?style=flat-square&logo=openai&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Backend%20%26%20Automation-0f3460?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Open%20to%20Collaborate-1a1a2e?style=flat-square&logo=handshake&logoColor=7b8cde"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=120&section=header&animation=fadeIn" width="100%"/>
 
 </div>
 
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=Punyansh+Sharma;AI+Systems+%2F+Backend+Thinking;Building+things+that+actually+work.)](https://git.io/typing-svg)
+
+</div>
+
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=14&duration=4000&pause=2000&color=8B949E&center=true&vCenter=true&width=700&lines=I+build+AI+pipelines%2C+automate+content+systems%2C+and+wire+LLMs+to+things+that+move.)](https://git.io/typing-svg)
+
+</div>
+
+<br/>
+
 ---
 
-<!-- CODE IDENTITY -->
-## `◈ identity.py`
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  identity.py  ░░░                           -->
+<!-- ════════════════════════════════════════════════ -->
+
+<details open>
+<summary><b>◈ identity.py</b></summary>
+
+<br/>
 
 ```python
-from dataclasses import dataclass, field
-from typing import Literal
-
-@dataclass
 class PunyanshSharma:
-    """
-    Backend & AI Systems Engineer.
-    Designs systems that scale, pipelines that ship, and AI that actually works.
-    """
 
-    handle     : str = "punyansh"
-    location   : str = "Chandigarh, India 🌐"
-    timezone   : str = "IST (UTC +5:30)"
+    location    = "Chandigarh, India"
+    timezone    = "IST (UTC +5:30)"
 
-    operating_mode : Literal["builder", "thinker", "debugger"] = "builder"
+    focus = [
+        "AI systems that run in production",
+        "automation pipelines (text → video → publish)",
+        "voice-first interfaces and LLM integration",
+        "backend thinking, clean architecture",
+    ]
 
-    current_focus : list[str] = field(default_factory=lambda: [
-        "Production-grade LLM pipelines",
-        "Voice-driven AI interfaces",
-        "Scalable automation systems",
-        "Distributed backend architecture",
-    ])
+    currently_building = [
+        "Alice   → voice AI assistant  [LLM + GUI + Unity]",
+        "AI Video Pipeline  → text to full video, automated",
+        "YouTube Automation → end-to-end content engine",
+    ]
 
-    stack : dict = field(default_factory=lambda: {
-        "primary"   : ["Python", "Kotlin"],
-        "systems"   : ["C++", "FFmpeg", "PyQt5"],
-        "ai_layer"  : ["LLM APIs", "TTS engines", "Prompt engineering"],
-        "mobile"    : ["Android", "Jetpack Compose"],
-        "infra"     : ["Linux", "Git", "REST APIs", "SQLite / PostgreSQL"],
-    })
+    languages   = ["Python", "Kotlin", "C++"]
+    tools       = ["PyQt5", "FFmpeg", "Jetpack Compose", "SQLite", "PostgreSQL"]
+    integrates  = ["LLM APIs", "TTS engines", "Linux pipelines", "Android"]
 
-    engineering_principles : list[str] = field(default_factory=lambda: [
-        "Pipelines over scripts",
-        "Systems thinking before code",
-        "Automate the repetitive, architect the rest",
-        "Complexity is a liability — clarity is the feature",
-    ])
-
-    def __repr__(self) -> str:
-        return f"<Engineer | AI × Systems × Automation | {self.location}>"
+    def approach(self):
+        return "Build the smallest system that solves the real problem."
 ```
 
----
-
-<!-- TECH STACK -->
-## `◈ stack.manifest`
-
-<div align="center">
-
-**[ Languages ]**
-
-![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
-![Kotlin](https://img.shields.io/badge/Kotlin-0d1117?style=for-the-badge&logo=kotlin&logoColor=7F52FF)
-![C++](https://img.shields.io/badge/C++-0d1117?style=for-the-badge&logo=cplusplus&logoColor=00599C)
-![Bash](https://img.shields.io/badge/Bash-0d1117?style=for-the-badge&logo=gnubash&logoColor=4EAA25)
-
-**[ Backend / Systems ]**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=009688)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-0d1117?style=for-the-badge&logo=ffmpeg&logoColor=007808)
-![PyQt5](https://img.shields.io/badge/PyQt5-0d1117?style=for-the-badge&logo=qt&logoColor=41CD52)
-![REST API](https://img.shields.io/badge/REST%20APIs-0d1117?style=for-the-badge&logo=postman&logoColor=FF6C37)
-
-**[ Databases ]**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=336791)
-![SQLite](https://img.shields.io/badge/SQLite-0d1117?style=for-the-badge&logo=sqlite&logoColor=003B57)
-![Redis](https://img.shields.io/badge/Redis-0d1117?style=for-the-badge&logo=redis&logoColor=DC382D)
-
-**[ DevOps / Infra ]**
-
-![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=FCC624)
-![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
-![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=2496ED)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0d1117?style=for-the-badge&logo=githubactions&logoColor=2088FF)
-
-**[ AI / LLM Layer ]**
-
-![OpenAI](https://img.shields.io/badge/OpenAI%20API-0d1117?style=for-the-badge&logo=openai&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-0d1117?style=for-the-badge&logo=chainlink&logoColor=375BD2)
-![TTS](https://img.shields.io/badge/TTS%20Engines-0d1117?style=for-the-badge&logo=audiomack&logoColor=fe6d00)
-![Prompt Eng.](https://img.shields.io/badge/Prompt%20Engineering-0d1117?style=for-the-badge&logo=openai&logoColor=7B8CDE)
-
-**[ Mobile / Frontend ]**
-
-![Android](https://img.shields.io/badge/Android-0d1117?style=for-the-badge&logo=android&logoColor=3DDC84)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-0d1117?style=for-the-badge&logo=jetpackcompose&logoColor=4285F4)
-![Unity](https://img.shields.io/badge/Unity-0d1117?style=for-the-badge&logo=unity&logoColor=white)
-
-</div>
-
----
-
-<!-- PROJECT HIGHLIGHTS -->
-## `◈ projects.log`
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 Alice — AI Assistant System
-> *Modular LLM-powered assistant with voice, GUI, and 3D avatar*
-
-A production-grade personal AI system integrating **LLM inference**, real-time **TTS synthesis**, and a **PyQt5 interface** — with a live **Unity 3D avatar** bridge for embodied interaction. Built as a composable pipeline, not a monolith.
-
-`Python` `PyQt5` `LLM APIs` `TTS` `Unity` `IPC`
-
-</td>
-<td width="50%" valign="top">
-
-### 🎬 AI Video Generation Pipeline
-> *Zero-human-input video factory*
-
-An end-to-end automation system that generates **narrated, captioned, effect-rendered videos** from raw input. Stitches together TTS, FFmpeg video processing, caption overlays, and post-production effects in a single orchestrated pipeline.
-
-`Python` `FFmpeg` `TTS` `Automation` `Subprocess`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 📡 YouTube Automation Engine
-> *Programmatic content deployment at scale*
-
-A scheduling and upload automation system that handles **content queuing, metadata injection, thumbnail management**, and platform API orchestration — removing the human bottleneck from content operations entirely.
-
-`Python` `YouTube Data API` `Scheduler` `SQLite`
-
-</td>
-<td width="50%" valign="top">
-
-### ⚙️ System Design Experiments
-> *Architecture before implementation*
-
-A private collection of distributed system designs, LLM pipeline architectures, and backend blueprints — built for learning, but scoped for production. Focus: **event-driven design**, **worker queues**, and **async I/O patterns**.
-
-`System Design` `Architecture` `Async` `Queues`
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- ENGINEERING PHILOSOPHY -->
-## `◈ philosophy.md`
-
-```
-╔══════════════════════════════════════════════════════════════════╗
-║              HOW I THINK ABOUT SYSTEMS                          ║
-╠══════════════════════════════════════════════════════════════════╣
-║                                                                  ║
-║  01  PIPELINES OVER SCRIPTS                                      ║
-║      Each stage has a contract. Output of one is input of next. ║
-║      No god functions. No spaghetti state.                       ║
-║                                                                  ║
-║  02  DESIGN BEFORE CODE                                          ║
-║      The first question is never "how". It's "why" and "what".  ║
-║      A whiteboard hour saves three debug hours.                  ║
-║                                                                  ║
-║  03  AUTOMATE OR ELIMINATE                                       ║
-║      If it runs more than twice, it should run itself.           ║
-║      Human attention is the scarcest resource.                   ║
-║                                                                  ║
-║  04  EXPLICIT OVER IMPLICIT                                      ║
-║      Magic is a maintenance nightmare.                           ║
-║      Clear interfaces > clever internals.                        ║
-║                                                                  ║
-║  05  BUILD FOR THE FAILURE CASE                                  ║
-║      Happy paths are easy. Retry logic, fallbacks,               ║
-║      and graceful degradation — that's the real architecture.    ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
----
-
-<!-- GITHUB STATS -->
-## `◈ stats.dashboard`
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=punyansh&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7b8cde&icon_color=533483&text_color=c9d1d9&ring_color=533483"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=punyansh&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7b8cde&text_color=c9d1d9&langs_count=8"/>
+</details>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=punyansh&theme=tokyonight&hide_border=true&background=0d1117&ring=533483&fire=7b8cde&currStreakLabel=7b8cde&sideLabels=c9d1d9&dates=666e7a&stroke=533483"/>
+---
 
-</div>
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  systems.log  ░░░                           -->
+<!-- ════════════════════════════════════════════════ -->
+
+<details open>
+<summary><b>◈ systems.log</b></summary>
+
+<br/>
+
+```bash
+$ ps aux | grep "active_projects"
+
+PID    NAME                  STATUS     DESCRIPTION
+───────────────────────────────────────────────────────────────────────
+1001   alice-core            RUNNING    voice AI: LLM inference + TTS + PyQt5 GUI
+1002   video-pipeline        RUNNING    text prompt → script → voice → video → export
+1003   yt-automation         RUNNING    content scheduling, metadata gen, upload pipeline
+1004   android-module        IN_DEV     Jetpack Compose UI for Alice mobile interface
+
+$ uptime
+  systems operational · latest commit: today · coffee: optimal
+```
+
+</details>
+
+<br/>
 
 ---
 
-<!-- CURRENT FOCUS -->
-## `◈ current.build`
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  architecture.md  ░░░                       -->
+<!-- ════════════════════════════════════════════════ -->
+
+<details open>
+<summary><b>◈ architecture.md</b></summary>
+
+<br/>
+
+```
+HOW I THINK ABOUT SYSTEMS
+
+  INPUT                    PROCESS                    OUTPUT
+  ─────                    ───────                    ──────
+  raw idea          →      smallest valid module  →   working pipeline
+  LLM response      →      structured extraction  →   usable data
+  text prompt       →      media generation chain →   final video/audio
+  user voice        →      intent parsing + TTS   →   assistant reply
+
+CORE CONSTRAINT:
+  If I can't explain the data flow in 3 lines, the design is wrong.
+
+AVOID:
+  - frameworks for their own sake
+  - abstraction before the second use case
+  - over-engineering a pipeline that runs once a day
+```
+
+</details>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  projects/  ░░░                             -->
+<!-- ════════════════════════════════════════════════ -->
+
+<details open>
+<summary><b>◈ projects/</b></summary>
+
+<br/>
+
+**`alice/`** — Voice-Based AI Assistant
+
+```
+Stack  →  Python · PyQt5 · LLM APIs · TTS · Unity (3D layer)
+Flow   →  mic input → intent detection → LLM inference → TTS → animated output
+Note   →  desktop GUI + Unity visual layer wired to the same event bus
+```
+
+<br/>
+
+**`ai-video-pipeline/`** — Text to Full Video, Automated
+
+```
+Stack  →  Python · FFmpeg · TTS · LLM APIs · image gen pipeline
+Flow   →  text prompt → LLM script → TTS voiceover → frame assembly → FFmpeg render
+Note   →  end-to-end, zero manual steps after trigger
+```
+
+<br/>
+
+**`youtube-automation/`** — Content Pipeline System
+
+```
+Stack  →  Python · LLM APIs · scheduling · metadata automation
+Flow   →  topic → script gen → video render → metadata → scheduled upload
+Note   →  built to run unattended, handles the full surface area
+```
+
+</details>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  stack.yaml  ░░░                            -->
+<!-- ════════════════════════════════════════════════ -->
+
+<details open>
+<summary><b>◈ stack.yaml</b></summary>
+
+<br/>
 
 ```yaml
-status: ACTIVE
+languages:
+  primary:   [ Python, Kotlin ]
+  systems:   [ C++ ]
 
-building:
-  - Alice v2         → persistent memory layer + multi-modal input
-  - Video Pipeline   → automated A/B testing for content formats
-  - LLM Orchestrator → multi-agent task routing system
+frameworks:
+  desktop:   [ PyQt5 ]
+  android:   [ Jetpack Compose ]
+  media:     [ FFmpeg ]
 
-learning:
-  - Distributed systems (Kafka, message queues)
-  - RAG architecture and vector search
-  - Low-latency inference optimization
+integrations:
+  ai:        [ OpenAI API, local LLMs, TTS engines ]
+  data:      [ SQLite, PostgreSQL ]
+  infra:     [ Linux, Git, bash scripting ]
 
-reading:
-  - "Designing Data-Intensive Applications" — Kleppmann
-  - LLM research papers on agent tool-use
+environment:
+  os:        Linux
+  editor:    whatever gets the job done
+  philosophy: less config, more output
 ```
+
+<br/>
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
+![Kotlin](https://img.shields.io/badge/Kotlin-0d1117?style=flat-square&logo=kotlin&logoColor=7F52FF)
+![C++](https://img.shields.io/badge/C++-0d1117?style=flat-square&logo=cplusplus&logoColor=00599C)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-0d1117?style=flat-square&logo=ffmpeg&logoColor=007808)
+![Linux](https://img.shields.io/badge/Linux-0d1117?style=flat-square&logo=linux&logoColor=FCC624)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1)
+![Android](https://img.shields.io/badge/Android-0d1117?style=flat-square&logo=android&logoColor=3DDC84)
+![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=F05032)
+
+</div>
+
+</details>
+
+<br/>
 
 ---
 
-<!-- FOOTER -->
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  principles.txt  ░░░                        -->
+<!-- ════════════════════════════════════════════════ -->
+
+<details open>
+<summary><b>◈ principles.txt</b></summary>
+
+<br/>
+
+```
+01  Ship the pipeline, not the idea.
+02  Automation that breaks silently is worse than no automation.
+03  Every abstraction has a cost. Pay it deliberately.
+04  Voice interfaces are hard. Do them anyway.
+05  If the system needs a manual, redesign the system.
+```
+
+</details>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  current_focus.yaml  ░░░                    -->
+<!-- ════════════════════════════════════════════════ -->
+
+<details open>
+<summary><b>◈ current_focus.yaml</b></summary>
+
+<br/>
+
+```yaml
+q2_2025:
+  deep_work:
+    - tightening Alice's latency (LLM → TTS round trip)
+    - making the video pipeline fault-tolerant
+    - learning: Android system internals, Compose state management
+
+  exploring:
+    - local LLM inference on constrained hardware
+    - structured output extraction from unstructured LLM responses
+    - lightweight event-driven architecture for desktop apps
+
+  not_doing:
+    - chasing frameworks
+    - rebuilding solved problems
+    - writing READMEs (ironic)
+```
+
+</details>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  metrics/  ░░░                              -->
+<!-- ════════════════════════════════════════════════ -->
+
+<details open>
+<summary><b>◈ metrics/</b></summary>
+
+<br/>
+
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:533483,50:0f3460,100:0d1117&height=120&section=footer"/>
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=punyansh&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=58A6FF&text_color=8b949e&ring_color=58A6FF" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=punyansh&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=8b949e&langs_count=6" />
+
+</div>
 
 <br/>
 
-**`// connect`**
+<div align="center">
 
-[![Email](https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:punyansh@example.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://linkedin.com/in/punyansh)
-[![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/punyansh)
+<img src="https://github-readme-streak-stats.herokuapp.com?user=punyansh&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=21262d&ring=58A6FF&fire=58A6FF&currStreakLabel=8b949e&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" />
 
-<br/>
-
-<sub><sup>
-`// systems don't build themselves — yet`&nbsp;&nbsp;•&nbsp;&nbsp;`© Punyansh Sharma`
-</sup></sub>
+</div>
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=punyansh&style=flat-square&color=533483&label=PROFILE+VIEWS)
+<div align="center">
 
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=punyansh&bg_color=0d1117&color=58A6FF&line=21262d&point=58A6FF&area=true&area_color=58A6FF&hide_border=true" width="95%"/>
+
+</div>
+
+</details>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  snake  ░░░                                 -->
+<!-- ════════════════════════════════════════════════ -->
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/punyansh/punyansh/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/punyansh/punyansh/output/github-contribution-grid-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/punyansh/punyansh/output/github-contribution-grid-snake-dark.svg" />
+</picture>
+
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- ░░░  footer  ░░░                                -->
+<!-- ════════════════════════════════════════════════ -->
+
+<div align="center">
+
+```bash
+$ echo "always building · never finished · Chandigarh, India"
+```
+
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=12&duration=5000&pause=3000&color=3D444D&center=true&vCenter=true&width=500&lines=systems+are+never+done%2C+only+deployed)](https://git.io/typing-svg)
+
+</div>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=80&section=footer&animation=fadeIn" width="100%"/>
 </div>
