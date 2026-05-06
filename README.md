@@ -1,11 +1,12 @@
-````md
+<div align="center">
+
 # Punyansh Sharma
 
-Building AI systems focused on:
-- real-time voice interaction
-- semantic retrieval
-- automation pipelines
-- AI-driven media generation
+```text
+AI Systems • Semantic Retrieval • Voice Interfaces • Automation Pipelines
+```
+
+</div>
 
 ---
 
@@ -16,19 +17,13 @@ Building AI systems focused on:
 Real-time desktop AI assistant built around:
 - streaming LLM interaction
 - semantic memory retrieval
-- voice-first UX
 - local AI inference
+- voice-first UX
 - desktop automation
 
-Core architecture built using:
-- PyQt5
-- Ollama
-- Piper TTS
-- Whisper-style voice pipelines
-- SQLite + vector memory
+### Core Stack
 
-System design references:
-
+`PyQt5` • `Ollama` • `Piper TTS` • `FAISS` • `SQLite` • `SentenceTransformers`
 
 ---
 
@@ -50,20 +45,22 @@ emotion detection
 Piper TTS synthesis
         ↓
 animated HUD response
-````
+```
 
 ---
 
-## Alice Core Systems
+## Core Systems
+
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### Streaming LLM Engine
 
-Alice uses local LLM inference through Ollama with:
-
-* token streaming
-* low-latency response generation
-* asynchronous worker threads
-* conversational memory injection
+- token streaming
+- low-latency inference
+- async worker threads
+- conversational memory injection
 
 ```text
 user input
@@ -77,22 +74,20 @@ partial token emission
 real-time HUD update
 ```
 
-Implemented in:
+**Files**
+- `ai_connector.py`
+- `alice_hud.py`
 
-* `ai_connector.py`
-* `alice_hud.py`
+</td>
 
----
+<td width="50%" valign="top">
 
 ### Semantic Memory System
 
-Custom long-term memory engine using:
-
-* SQLite persistence
-* SentenceTransformers embeddings
-* FAISS / HNSW retrieval
-* semantic recall
-* contextual conversation injection
+- vector memory persistence
+- semantic recall
+- contextual retrieval
+- background indexing
 
 ```text
 conversation
@@ -106,29 +101,25 @@ semantic retrieval
 memory-enhanced prompting
 ```
 
-Features:
+**Files**
+- `memory_manager.py`
 
-* persistent memory database
-* similarity search
-* GPU-accelerated FAISS support
-* background indexing
-* contextual recall
-
-Implemented in `memory_manager.py`.
-
-
+</td>
+</tr>
+</table>
 
 ---
 
+<table>
+<tr>
+<td width="50%" valign="top">
+
 ### Voice + TTS Pipeline
 
-Real-time voice interaction system using:
-
-* Piper TTS
-* threaded playback
-* streaming response handling
-* interruption support
-* emotion-aware synthesis pipeline
+- Piper TTS
+- threaded playback
+- interruption support
+- emotion-aware synthesis
 
 ```text
 LLM response
@@ -139,35 +130,23 @@ Piper synthesis
     ↓
 audio playback
     ↓
-HUD animation sync
+HUD sync
 ```
 
-Features:
+**Files**
+- `tts_engine.py`
+- `utils.py`
 
-* low-latency synthesis
-* playback interruption
-* cached audio generation
-* threaded voice queue system
+</td>
 
-Implemented in:
-
-* `tts_engine.py`
-* `utils.py`
-
-
-
----
+<td width="50%" valign="top">
 
 ### Intent + Action Engine
 
-Voice-controlled desktop automation layer supporting:
-
-* application launching
-* browser control
-* search automation
-* system monitoring
-* keyboard/mouse automation
-* window management
+- desktop automation
+- browser control
+- app launching
+- system monitoring
 
 ```text
 voice command
@@ -179,34 +158,24 @@ action routing
 desktop automation
 ```
 
-Capabilities:
+**Files**
+- `intent_engine.py`
+- `assistant_actions.py`
 
-* open applications
-* control windows
-* system statistics
-* volume control
-* screenshots
-* web automation
-
-Implemented in:
-
-* `intent_engine.py`
-* `assistant_actions.py`
-
-
+</td>
+</tr>
+</table>
 
 ---
 
-### HUD Interface
+## HUD Interface
 
-Custom futuristic PyQt5 HUD interface with:
-
-* animated avatar rendering
-* live transcript display
-* streaming responses
-* speaking state visualization
-* emotion-reactive UI
-* voice activity animation
+Custom PyQt5 HUD interface with:
+- animated avatar rendering
+- live transcript display
+- streaming responses
+- speaking-state visualization
+- emotion-reactive UI
 
 ```text
 AI state
@@ -218,29 +187,20 @@ animated avatar
 real-time feedback
 ```
 
-Built using:
-
-* PyQt5
-* QThreads
-* animated GIF rendering
-* asynchronous event systems
-
-Implemented in:
-
-* `alice_hud.py`
-* `main.py`
+**Files**
+- `alice_hud.py`
+- `main.py`
 
 ---
 
 # AI Shorts Pipeline
 
 Automated short-form video generation system using:
-
-* LLM-generated scripts
-* semantic clip retrieval
-* CLIP + FAISS indexing
-* Whisper alignment
-* FFmpeg rendering
+- LLM-generated scripts
+- semantic clip retrieval
+- CLIP + FAISS indexing
+- Whisper alignment
+- FFmpeg rendering
 
 ```text
 topic
@@ -258,13 +218,9 @@ FFmpeg rendering
 final short
 ```
 
-Core systems:
+### Core Systems
 
-* CLIP embeddings
-* FAISS retrieval
-* automated pacing
-* subtitle synchronization
-* rendering orchestration
+`CLIP` • `FAISS` • `Whisper` • `FFmpeg` • `LLMs`
 
 ---
 
@@ -272,8 +228,6 @@ Core systems:
 
 ```text
 INPUT → PROCESS → OUTPUT
-
-Everything is a pipeline.
 
 - modular systems
 - semantic retrieval
@@ -287,35 +241,18 @@ Everything is a pipeline.
 
 # Stack
 
-```yaml
-languages:
-  - Python
-  - Kotlin
-  - C++
+<div align="center">
 
-ai:
-  - Ollama
-  - Whisper
-  - CLIP
-  - FAISS
-  - SentenceTransformers
-  - Piper TTS
+![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python)
+![PyQt5](https://img.shields.io/badge/PyQt5-0d1117?style=for-the-badge&logo=qt)
+![Ollama](https://img.shields.io/badge/Ollama-0d1117?style=for-the-badge)
+![FAISS](https://img.shields.io/badge/FAISS-0d1117?style=for-the-badge)
+![Whisper](https://img.shields.io/badge/Whisper-0d1117?style=for-the-badge)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-0d1117?style=for-the-badge&logo=ffmpeg)
+![PyTorch](https://img.shields.io/badge/PyTorch-0d1117?style=for-the-badge&logo=pytorch)
+![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux)
 
-frameworks:
-  - PyQt5
-  - PyTorch
-
-systems:
-  - FFmpeg
-  - SQLite
-  - REST APIs
-  - Async pipelines
-
-tools:
-  - Git
-  - Linux
-  - Windows automation
-```
+</div>
 
 ---
 
@@ -326,4 +263,3 @@ tools:
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MapGamer71223&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117"/>
 
 </div>
-````
