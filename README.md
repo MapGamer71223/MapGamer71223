@@ -1,154 +1,270 @@
+````md
 # Punyansh Sharma
 
-Building AI-driven automation systems focused on content pipelines, retrieval systems, and real-time media generation.
+Building AI systems focused on:
+- real-time voice interaction
+- semantic retrieval
+- automation pipelines
+- AI-driven media generation
 
 ---
 
 # Projects
 
-## AI Shorts Pipeline
+## Alice — AI Voice Assistant
 
-End-to-end automated YouTube Shorts generation system built around:
-- LLM-generated scripts
-- semantic clip retrieval
-- TTS + Whisper alignment
-- FFmpeg rendering
-- word-level subtitle synchronization
+Real-time desktop AI assistant built around:
+- streaming LLM interaction
+- semantic memory retrieval
+- voice-first UX
+- local AI inference
+- desktop automation
 
-Core pipeline architecture: :contentReference[oaicite:0]{index=0}
+Core architecture built using:
+- PyQt5
+- Ollama
+- Piper TTS
+- Whisper-style voice pipelines
+- SQLite + vector memory
 
-```text
-topic
-  ↓
-LLM script generation
-  ↓
-script scoring + refinement
-  ↓
-semantic clip retrieval (CLIP + FAISS)
-  ↓
-TTS generation
-  ↓
-Whisper word alignment
-  ↓
-ASS subtitle generation
-  ↓
-FFmpeg rendering
-  ↓
-final vertical short
-````
+System design references:
 
-### System Components
-
-#### Script Engine
-
-Generates and scores viral-style short-form scripts using local LLMs with:
-
-* batch generation
-* hook mutation
-* script validation
-* metadata generation
-* retention-focused scoring
-
-Implemented in `script_engine.py` and GUI orchestration layer.
 
 ---
 
-#### CLIP + FAISS Retrieval Engine
-
-Semantic moment-level video retrieval system using:
-
-* CLIP embeddings
-* FAISS indexing
-* motion scoring
-* category-aware ranking
-* multi-frame analysis
-
-Supports intelligent clip selection instead of random stock footage.
+## Alice System Architecture
 
 ```text
-script line
+microphone input
+        ↓
+speech recognition
+        ↓
+input filtering + intent routing
+        ↓
+semantic memory retrieval
+        ↓
+LLM streaming inference
+        ↓
+emotion detection
+        ↓
+Piper TTS synthesis
+        ↓
+animated HUD response
+````
+
+---
+
+## Alice Core Systems
+
+### Streaming LLM Engine
+
+Alice uses local LLM inference through Ollama with:
+
+* token streaming
+* low-latency response generation
+* asynchronous worker threads
+* conversational memory injection
+
+```text
+user input
    ↓
-CLIP text embedding
+memory context injection
    ↓
-FAISS similarity search
+Ollama streaming
    ↓
-moment-level retrieval
+partial token emission
    ↓
-motion/category reranking
-   ↓
-best matching segment
+real-time HUD update
 ```
 
 Implemented in:
 
-* `build_index.py`
-* `clip_engine.py`
-* `clip_sorter.py`
+* `ai_connector.py`
+* `alice_hud.py`
 
 ---
 
-#### Rendering Pipeline
+### Semantic Memory System
 
-Custom FFmpeg-based render engine with:
+Custom long-term memory engine using:
 
-* TTS-driven pacing
-* exact subtitle synchronization
-* automatic clip timing
-* vertical formatting
-* ASS subtitle compositing
+* SQLite persistence
+* SentenceTransformers embeddings
+* FAISS / HNSW retrieval
+* semantic recall
+* contextual conversation injection
 
 ```text
-audio timing = master timeline
-clip durations follow speech
-captions follow Whisper timestamps
+conversation
+      ↓
+embedding generation
+      ↓
+vector indexing
+      ↓
+semantic retrieval
+      ↓
+memory-enhanced prompting
 ```
 
-Implemented in `part3.py`. 
+Features:
+
+* persistent memory database
+* similarity search
+* GPU-accelerated FAISS support
+* background indexing
+* contextual recall
+
+Implemented in `memory_manager.py`.
+
+
 
 ---
 
-#### TTS + Alignment
+### Voice + TTS Pipeline
 
-Voice synthesis pipeline using:
+Real-time voice interaction system using:
 
-* Edge TTS / Tortoise TTS
-* Whisper forced alignment
-* per-word timestamps
-* subtitle timing generation
-
-Implemented in `tts_engine.py`. 
-
----
-
-## Alice — Voice AI Assistant
-
-Desktop AI assistant focused on low-latency interaction and voice-driven workflows.
+* Piper TTS
+* threaded playback
+* streaming response handling
+* interruption support
+* emotion-aware synthesis pipeline
 
 ```text
-mic input
+LLM response
+    ↓
+emotion analysis
+    ↓
+Piper synthesis
+    ↓
+audio playback
+    ↓
+HUD animation sync
+```
+
+Features:
+
+* low-latency synthesis
+* playback interruption
+* cached audio generation
+* threaded voice queue system
+
+Implemented in:
+
+* `tts_engine.py`
+* `utils.py`
+
+
+
+---
+
+### Intent + Action Engine
+
+Voice-controlled desktop automation layer supporting:
+
+* application launching
+* browser control
+* search automation
+* system monitoring
+* keyboard/mouse automation
+* window management
+
+```text
+voice command
+      ↓
+intent classification
+      ↓
+action routing
+      ↓
+desktop automation
+```
+
+Capabilities:
+
+* open applications
+* control windows
+* system statistics
+* volume control
+* screenshots
+* web automation
+
+Implemented in:
+
+* `intent_engine.py`
+* `assistant_actions.py`
+
+
+
+---
+
+### HUD Interface
+
+Custom futuristic PyQt5 HUD interface with:
+
+* animated avatar rendering
+* live transcript display
+* streaming responses
+* speaking state visualization
+* emotion-reactive UI
+* voice activity animation
+
+```text
+AI state
    ↓
-speech processing
+HUD renderer
    ↓
-LLM inference
+animated avatar
    ↓
-TTS generation
-   ↓
-animated response
+real-time feedback
 ```
 
 Built using:
 
-* Python
 * PyQt5
-* local LLMs
-* TTS systems
-* Unity integration
+* QThreads
+* animated GIF rendering
+* asynchronous event systems
 
-Focus:
+Implemented in:
 
-* real-time interaction
-* modular architecture
-* voice-first UX
+* `alice_hud.py`
+* `main.py`
+
+---
+
+# AI Shorts Pipeline
+
+Automated short-form video generation system using:
+
+* LLM-generated scripts
+* semantic clip retrieval
+* CLIP + FAISS indexing
+* Whisper alignment
+* FFmpeg rendering
+
+```text
+topic
+  ↓
+script generation
+  ↓
+semantic clip retrieval
+  ↓
+TTS generation
+  ↓
+subtitle alignment
+  ↓
+FFmpeg rendering
+  ↓
+final short
+```
+
+Core systems:
+
+* CLIP embeddings
+* FAISS retrieval
+* automated pacing
+* subtitle synchronization
+* rendering orchestration
 
 ---
 
@@ -159,11 +275,12 @@ INPUT → PROCESS → OUTPUT
 
 Everything is a pipeline.
 
-- modular stages
-- deterministic flow
-- automation-first design
+- modular systems
 - semantic retrieval
-- low manual overhead
+- local-first AI
+- automation-first design
+- real-time interaction
+- low-latency workflows
 ```
 
 ---
@@ -177,25 +294,27 @@ languages:
   - C++
 
 ai:
-  - LLM APIs
+  - Ollama
   - Whisper
   - CLIP
   - FAISS
-  - TTS systems
+  - SentenceTransformers
+  - Piper TTS
+
+frameworks:
+  - PyQt5
+  - PyTorch
 
 systems:
   - FFmpeg
-  - PyQt5
+  - SQLite
   - REST APIs
   - Async pipelines
-
-data:
-  - SQLite
-  - PostgreSQL
 
 tools:
   - Git
   - Linux
+  - Windows automation
 ```
 
 ---
@@ -207,4 +326,4 @@ tools:
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MapGamer71223&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117"/>
 
 </div>
-```
+````
