@@ -12,29 +12,94 @@ AI Systems • Semantic Retrieval • Voice Interfaces • Automation Pipelines
 
 # Projects
 
-## Alice — AI Voice Assistant
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Real-time desktop AI assistant built around:
+# AI Shorts Pipeline
+
+End-to-end automated YouTube Shorts generation system built around:
+- LLM-generated scripts
+- semantic clip retrieval
+- TTS + Whisper alignment
+- FFmpeg rendering
+- word-level subtitle synchronization
+
+### Pipeline
+
+```text
+topic
+  ↓
+LLM script generation
+  ↓
+script scoring + refinement
+  ↓
+semantic clip retrieval
+  ↓
+TTS generation
+  ↓
+Whisper alignment
+  ↓
+ASS subtitle generation
+  ↓
+FFmpeg rendering
+  ↓
+final vertical short
+```
+
+### Retrieval Engine
+
+```text
+script line
+   ↓
+CLIP embedding
+   ↓
+FAISS retrieval
+   ↓
+motion reranking
+   ↓
+best matching segment
+```
+
+### Core Systems
+
+- CLIP embeddings
+- FAISS indexing
+- subtitle synchronization
+- automated pacing
+- FFmpeg orchestration
+- retention-focused script generation
+
+### Key Files
+
+`build_index.py`  
+`clip_engine.py`  
+`clip_sorter.py`  
+`script_engine.py`  
+`part3.py`  
+`tts_engine.py`
+
+</td>
+
+<td width="50%" valign="top">
+
+# Alice — AI Voice Assistant
+
+Real-time desktop AI assistant focused on:
 - streaming LLM interaction
 - semantic memory retrieval
 - local AI inference
-- voice-first UX
 - desktop automation
+- voice-first UX
 
-### Core Stack
-
-`PyQt5` • `Ollama` • `Piper TTS` • `FAISS` • `SQLite` • `SentenceTransformers`
-
----
-
-## Alice System Architecture
+### System Architecture
 
 ```text
 microphone input
         ↓
 speech recognition
         ↓
-input filtering + intent routing
+intent routing
         ↓
 semantic memory retrieval
         ↓
@@ -47,25 +112,12 @@ Piper TTS synthesis
 animated HUD response
 ```
 
----
-
-## Core Systems
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Streaming LLM Engine
-
-- token streaming
-- low-latency inference
-- async worker threads
-- conversational memory injection
+### Core Systems
 
 ```text
 user input
    ↓
-memory context injection
+memory injection
    ↓
 Ollama streaming
    ↓
@@ -74,153 +126,31 @@ partial token emission
 real-time HUD update
 ```
 
-**Files**
-- `ai_connector.py`
-- `alice_hud.py`
+### Features
 
-</td>
-
-<td width="50%" valign="top">
-
-### Semantic Memory System
-
-- vector memory persistence
-- semantic recall
-- contextual retrieval
-- background indexing
-
-```text
-conversation
-      ↓
-embedding generation
-      ↓
-vector indexing
-      ↓
-semantic retrieval
-      ↓
-memory-enhanced prompting
-```
-
-**Files**
-- `memory_manager.py`
-
-</td>
-</tr>
-</table>
-
----
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Voice + TTS Pipeline
-
-- Piper TTS
-- threaded playback
-- interruption support
+- semantic memory system
+- vector retrieval
+- threaded TTS playback
 - emotion-aware synthesis
+- HUD-based interaction
+- desktop action routing
 
-```text
-LLM response
-    ↓
-emotion analysis
-    ↓
-Piper synthesis
-    ↓
-audio playback
-    ↓
-HUD sync
-```
+### Core Stack
 
-**Files**
-- `tts_engine.py`
-- `utils.py`
+`PyQt5` • `Ollama` • `Piper TTS`  
+`SQLite` • `FAISS` • `SentenceTransformers`
 
-</td>
+### Key Files
 
-<td width="50%" valign="top">
-
-### Intent + Action Engine
-
-- desktop automation
-- browser control
-- app launching
-- system monitoring
-
-```text
-voice command
-      ↓
-intent classification
-      ↓
-action routing
-      ↓
-desktop automation
-```
-
-**Files**
-- `intent_engine.py`
-- `assistant_actions.py`
+`memory_manager.py`  
+`ai_connector.py`  
+`tts_engine.py`  
+`intent_engine.py`  
+`alice_hud.py`
 
 </td>
 </tr>
 </table>
-
----
-
-## HUD Interface
-
-Custom PyQt5 HUD interface with:
-- animated avatar rendering
-- live transcript display
-- streaming responses
-- speaking-state visualization
-- emotion-reactive UI
-
-```text
-AI state
-   ↓
-HUD renderer
-   ↓
-animated avatar
-   ↓
-real-time feedback
-```
-
-**Files**
-- `alice_hud.py`
-- `main.py`
-
----
-
-# AI Shorts Pipeline
-
-Automated short-form video generation system using:
-- LLM-generated scripts
-- semantic clip retrieval
-- CLIP + FAISS indexing
-- Whisper alignment
-- FFmpeg rendering
-
-```text
-topic
-  ↓
-script generation
-  ↓
-semantic clip retrieval
-  ↓
-TTS generation
-  ↓
-subtitle alignment
-  ↓
-FFmpeg rendering
-  ↓
-final short
-```
-
-### Core Systems
-
-`CLIP` • `FAISS` • `Whisper` • `FFmpeg` • `LLMs`
 
 ---
 
@@ -231,8 +161,8 @@ INPUT → PROCESS → OUTPUT
 
 - modular systems
 - semantic retrieval
+- automation-first architecture
 - local-first AI
-- automation-first design
 - real-time interaction
 - low-latency workflows
 ```
