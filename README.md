@@ -3,152 +3,179 @@
 # Punyansh Sharma
 
 ```text
-AI Systems • Semantic Retrieval • Voice Interfaces • Automation Pipelines
+AI Systems • Backend Infrastructure • Real-Time Voice Systems • Automation Pipelines
 ```
+
+Building AI-integrated systems focused on:
+real-time inference, semantic retrieval, async backend architecture, and automation-first engineering.
+
+<br>
+
+<a href="https://github.com/MapGamer71223">
+  <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="https://linkedin.com/in/YOUR_LINKEDIN">
+  <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin"/>
+</a>
 
 </div>
 
 ---
 
-# Projects
+# Featured Projects
 
 <table>
 <tr>
+
 <td width="50%" valign="top">
 
-# AI Shorts Pipeline
+## Alice — AI Voice Assistant
 
-End-to-end automated YouTube Shorts generation system built around:
-- LLM-generated scripts
-- semantic clip retrieval
-- TTS + Whisper alignment
-- FFmpeg rendering
-- word-level subtitle synchronization
+Real-time desktop AI assistant built around:
+
+* streaming LLM inference
+* semantic memory retrieval
+* emotion-aware TTS
+* local-first AI workflows
+* desktop automation
+
+### Core Systems
+
+```text
+speech input
+    ↓
+semantic retrieval
+    ↓
+LLM streaming
+    ↓
+emotion analysis
+    ↓
+voice synthesis
+    ↓
+HUD rendering
+```
+
+### Stack
+
+`Python` • `PyQt5` • `Ollama`
+`FAISS` • `SentenceTransformers`
+`Piper TTS` • `SQLite`
+
+</td>
+
+<td width="50%" valign="top">
+
+## AI Shorts Pipeline
+
+Automated short-form video generation system featuring:
+
+* semantic clip retrieval
+* AI narration generation
+* word-level subtitle alignment
+* FFmpeg rendering orchestration
+* retention-focused scripting
 
 ### Pipeline
 
 ```text
 topic
   ↓
-LLM script generation
+LLM scripting
   ↓
-script scoring + refinement
-  ↓
-semantic clip retrieval
+semantic retrieval
   ↓
 TTS generation
   ↓
-Whisper alignment
-  ↓
-ASS subtitle generation
+subtitle alignment
   ↓
 FFmpeg rendering
-  ↓
-final vertical short
 ```
 
-### Retrieval Engine
+### Stack
+
+`Python` • `CLIP` • `FAISS`
+`Whisper` • `FFmpeg`
+`MoviePy` • `Edge TTS`
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+## Multi-Tenant SaaS Backend
+
+Scalable backend platform engineered with:
+
+* strict tenant isolation
+* BullMQ async worker queues
+* Redis-backed job orchestration
+* API rate limiting
+* modular MVC architecture
+
+### Infrastructure
 
 ```text
-script line
+request
    ↓
-CLIP embedding
+tenant resolver
    ↓
-FAISS retrieval
+middleware layer
    ↓
-motion reranking
+service logic
    ↓
-best matching segment
+worker queues
+   ↓
+audit logging
 ```
 
-### Core Systems
+### Stack
 
-- CLIP embeddings
-- FAISS indexing
-- subtitle synchronization
-- automated pacing
-- FFmpeg orchestration
-- retention-focused script generation
-
-### Key Files
-
-`build_index.py`  
-`clip_engine.py`  
-`clip_sorter.py`  
-`script_engine.py`  
-`part3.py`  
-`tts_engine.py`
+`TypeScript` • `Node.js`
+`PostgreSQL` • `Redis`
+`BullMQ` • `Supabase`
 
 </td>
 
 <td width="50%" valign="top">
 
-# Alice — AI Voice Assistant
+## AI-Powered IVR System
 
-Real-time desktop AI assistant focused on:
-- streaming LLM interaction
-- semantic memory retrieval
-- local AI inference
-- desktop automation
-- voice-first UX
+Real-time telephony AI system supporting:
 
-### System Architecture
+* streaming voice conversations
+* Twilio WebSocket audio
+* live STT + TTS processing
+* tenant-aware retrieval
+* async session orchestration
+
+### Architecture
 
 ```text
-microphone input
-        ↓
+Twilio stream
+      ↓
+audio decoding
+      ↓
 speech recognition
-        ↓
-intent routing
-        ↓
-semantic memory retrieval
-        ↓
-LLM streaming inference
-        ↓
-emotion detection
-        ↓
-Piper TTS synthesis
-        ↓
-animated HUD response
+      ↓
+LLM streaming
+      ↓
+voice synthesis
+      ↓
+call response
 ```
 
-### Core Systems
+### Stack
 
-```text
-user input
-   ↓
-memory injection
-   ↓
-Ollama streaming
-   ↓
-partial token emission
-   ↓
-real-time HUD update
-```
-
-### Features
-
-- semantic memory system
-- vector retrieval
-- threaded TTS playback
-- emotion-aware synthesis
-- HUD-based interaction
-- desktop action routing
-
-### Core Stack
-
-`PyQt5` • `Ollama` • `Piper TTS`  
-`SQLite` • `FAISS` • `SentenceTransformers`
-
-### Key Files
-
-`memory_manager.py`  
-`ai_connector.py`  
-`tts_engine.py`  
-`intent_engine.py`  
-`alice_hud.py`
+`FastAPI` • `WebSocket`
+`Gemini API` • `Docker`
+`Vosk` • `Edge TTS`
 
 </td>
+
 </tr>
 </table>
 
@@ -159,28 +186,30 @@ real-time HUD update
 ```text
 INPUT → PROCESS → OUTPUT
 
-- modular systems
-- semantic retrieval
-- automation-first architecture
-- local-first AI
-- real-time interaction
-- low-latency workflows
+• real-time systems
+• async architectures
+• semantic retrieval
+• automation pipelines
+• low-latency workflows
+• AI-integrated infrastructure
 ```
 
 ---
 
-# Stack
+# Tech Stack
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python)
-![PyQt5](https://img.shields.io/badge/PyQt5-0d1117?style=for-the-badge&logo=qt)
-![Ollama](https://img.shields.io/badge/Ollama-0d1117?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge\&logo=python)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge\&logo=typescript)
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge\&logo=fastapi)
+![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge\&logo=node.js)
+![Redis](https://img.shields.io/badge/Redis-0d1117?style=for-the-badge\&logo=redis)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge\&logo=docker)
 ![FAISS](https://img.shields.io/badge/FAISS-0d1117?style=for-the-badge)
 ![Whisper](https://img.shields.io/badge/Whisper-0d1117?style=for-the-badge)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-0d1117?style=for-the-badge&logo=ffmpeg)
-![PyTorch](https://img.shields.io/badge/PyTorch-0d1117?style=for-the-badge&logo=pytorch)
-![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-0d1117?style=for-the-badge\&logo=ffmpeg)
+![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge\&logo=linux)
 
 </div>
 
@@ -188,8 +217,8 @@ INPUT → PROCESS → OUTPUT
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=MapGamer71223&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=MapGamer71223&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117"/>
 
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MapGamer71223&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MapGamer71223&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117"/>
 
 </div>
